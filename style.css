@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
+้html {
+    font-size: calc(60% + 0.8vmin);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Encode Sans Expanded", sans-serif;
+}
+
+.container {
+    background-image: linear-gradient(rgb(70,130,180,100%), rgb(255,255,255,25%)), url('./picture/building-page.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+    
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 250px;
+
+}
+
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;;
+
+}
+
+.logo-container img {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    padding: 3px;
+    border-radius: 50px;
+    
+}
+
+.logo-container p {
+    margin: 0px;
+    color: white;
+    padding-top: 3px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul li::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(235, 255, 80);
+    transition: width 0.3s;
+    margin-top: 5px;
+}
+
+
+.menu ul li:hover::after {
+    width: 100%;
+}
+
+.tag {
+    background-color: rgb(2, 149, 49);
+    width: 36px;
+    height: 90px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -6px;
+    box-shadow: -26px 20px 33px -14px rgba(0,0,0,0.79);
+}
+
+.tag > p {
+    transform: rotate(90deg);
+    color: white;
+    font-size: 10px;
+    margin-top: 10px;
+    
+}
+
+.contact .icon {
+    width: 8px;
+    margin-top: 10px;
+    background-color: white;
+    padding: 3px 8px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.contact {
+    display: flex;
+    gap: 12px;
+}
+
+.info {
+    color: white;
+    font-size: 14px;
+    padding-left: 5px;
+    
+}
+
+.info .phone {
+    margin: auto;
+    padding-top: 30px;
+}
+
+.info .email {
+    margin: auto;
+}
+
+.textbox {
+    padding: 0px 250px;
+}
+
+fieldset {
+    position: relative;
+    margin-left: 60px;
+    margin-right: 200px;
+    margin-top: 100px;
+    border: 2px solid white;
+    border-style: solid solid solid 2px;
+
+    
+}
+
+legend {
+    position: absolute;
+    top : 20px;
+    left: -30px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+fieldset p {
+    padding-top: 70px;
+    color: white;
+}
+
+.article {
+    display: flex;
+    padding: 0px 250px;
+    justify-content: space-between;
+    
+}
+
+.article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: -30px;
+}
+
+.article .detail {
+    width: 100%;
+    padding-left: 40px;
+    color: gray;
+    
+}
+
+.profilecard {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0px 250px;
+}
+
+.profilecard .card{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.profilecard .card .icon{
+   font-size: 30px;
+   color: rgb(5, 5, 58);
+}
+
+.profilecard .card .profiledetail {
+    color: gray;
+}
+
+.poolview{
+    display: flex;
+    position: relative;
+}
+
+.poolview img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.poolview .suggest {
+    position: absolute;
+    right: 0;
+    height: 350px;
+    width: 50%;
+    background: rgba(0,0,0,0.5);
+    color: aliceblue;
+}
+
+.text-suggest {
+    margin: 50px;
+}
+
+.poolview .suggest h2{
+    color: yellow;
+}
+
+.poolview button {
+    color: white;
+    background-color: rgba(0,0,0,0);
+    border: 1.5px solid white;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.homeslide {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    display: grid;
+}
+
+.home-arrow {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.home-arrow .left {
+    margin-left: 150px;
+}
+
+.home-arrow .right {
+    margin-right: 150px;
+}
+
+.homecard {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 250px;
+}
+    
+.homesell-card {
+    height: 360px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 13px 27px 55px -31px rgba(0,0,0,0.63);
+}
+
+.homesell-card img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.homename h2 {
+    font-size: 13px;
+    color: rgb(81, 80, 80);
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    margin-left: 30px;
+}
+
+.homename h3 {
+    font-size: 10px;
+    color: rgb(103, 103, 103);
+    margin-top: 3px;
+    margin-left: 30px;
+}
+
+.address p {
+    font-size: 10px;
+    color: gray;
+    margin-top: 20px;
+    margin-left: 30px;
+    
+}
+
+.price p {
+    font-size: 10px;
+    color: rgb(103, 103, 103);
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+
+.arrow {
+    border: solid gray;
+    border-width: 0 3px 3px 0;
+    padding: 5px;
+    display:inline-flex;
+  }
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin-right: 50px;
+    
+}
+  
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    margin-left: 50px;
+}
+
+.footer {
+    background-color: black;
+    display: flex;
+    color: white;
+    height: 300px;
+    align-items: start;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.footer img {
+    width: auto;
+    height: 100px;
+
+}
+
+.footer li {
+    list-style: none;
+    font-size: 14px;
+}
